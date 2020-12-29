@@ -26,7 +26,7 @@ import org.junit.runner.RunWith;
         glue = {"com.cvlibrary.stepdefs"},
         dryRun = false,
         monochrome = true,
-        plugin = {"pretty", "html:target/cucumber-reports/report.html"})
+        plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"})
 @RunWith(Cucumber.class)
 public class TestRunner {
     @AfterClass
